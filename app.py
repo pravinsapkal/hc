@@ -7,7 +7,7 @@ from logging.handlers import RotatingFileHandler
 from flask import request
 
 url = urlparse.urlparse(os.environ.get('DATABASE_URL'))
-db = "dbname=%s user=%s password=%s host=%s " % (url.path[1:], url.username, url.password, url.hostname)
+db = "dbname=d909i156ke6bui user=tzejwkfijgkoud password=282b78c290a992813d5a2a07031d1271930cc702e49ca1cfa476f0deb431d57d host=ec2-54-173-138-144.compute-1.amazonaws.com"
 schema = "schema.sql"
 conn = psycopg2.connect(db)
 
